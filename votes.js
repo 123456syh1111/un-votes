@@ -268,12 +268,12 @@ d3.csv("data/countries.csv").then((countries) => {
 
         topCountriesChartSpinner.stop();
         topCountriesChart
-          .height(254)
+          .height(2540)
           .dimension(dateDimension)
           .group(similarityGroup)
           .ordering((d) => -d.value.total)
           .othersGrouper(false)
-          .cap(13)
+          .cap(30)
           .valueAccessor((d) => d.value.total / 2)
           .label((d) => ccodeToCountry[d.key])
           .title(
